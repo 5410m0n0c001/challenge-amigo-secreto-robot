@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amigo Secreto alura Latam</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header-banner">
+        <h1 class="main-title">Amigo Secreto Alura Latam</h1>
+        <img src="challenge-amigo-secreto_esp-main/assets/amigo-secreto.png" alt="">
+    </header>
+    
+    <main>
+        <section class="input-section">
+            <div class="input-wrapper">
+                <input type="text" id="amigo" class="input-name" placeholder="Escribe un nombre">
+                <button class="button-add" onclick="agregarAmigo()">Añadir</button>
+            </div>
+            
+            <ul id="listaAmigos" role="list"></ul>
+        </section>
+        
+        <div class="button-container">
+            <button class="button-draw" onclick="sortearAmigo()" aria-label="Sortear amigo secreto">
+                <img src="challenge-amigo-secreto_esp-main/assets/play_circle_outline.png" alt="Ícono para sortear">
+                Sortear amigo
+            </button>
+            <button class="button-reset" onclick="reiniciarSorteo()" aria-label="Reiniciar sorteo">
+                🔄 Reiniciar
+            </button>
+        </div>
+        
+        <div id="resultado" aria-live="polite"></div>
+    </main>
+    
+    <script src="app.js" defer></script>
+</body>
+</html>
